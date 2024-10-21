@@ -15,7 +15,7 @@ get ("/rock") do
   else @comp_move == "scissors"
     @outcome = "won"
   end
-erb(:zebra)
+erb(:rock_temp)
 end
 
 get ("/paper") do
@@ -28,7 +28,7 @@ get ("/paper") do
   else @comp_move == "scissors"
     @outcome = "lost"
   end
-erb(:giraffe)
+erb(:paper_temp)
 end
 
 get ("/scissors") do
@@ -41,5 +41,5 @@ get ("/scissors") do
   else @comp_move == "scissors"
     @outcome = "tied"
   end
-erb(:lion)
+erb(:scis_temp)
 end
